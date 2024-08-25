@@ -116,7 +116,7 @@ main article button {
   border-radius: 0.25rem;
 }
 
-footer {
+/* footer {
   background: rgba(0, 0, 0, 0.03);
   height: 16rem;
   display: flex;
@@ -129,15 +129,15 @@ footer > section {
   display: flex;
   box-sizing: border-box;
 }
-
-footer > section article {
+ */
+/* footer > section article {
   flex: 1;
   margin: 0 2rem;
 }
 
 footer > section article a {
   margin: 0.25rem 0;
-}
+} */
 
 /* gabriel css */
 #ingredients {
