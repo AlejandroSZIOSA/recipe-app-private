@@ -2,7 +2,7 @@ const mainEl = document.querySelector("main aside");
 const formEl = document.querySelector("main aside form");
 
 formEl.addEventListener("submit", function (event) {
-  event.preventDefault(); // prevent the default form submission
+  event.preventDefault(); // Prevent the default form submission
 
   const submitObj = {
     title: event.target.title.value,
