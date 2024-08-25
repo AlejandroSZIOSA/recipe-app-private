@@ -11,14 +11,20 @@ formEl.addEventListener("submit", function (event) {
     ingredients: event.target.ingredients.value,
   };
   event.target.reset(); //Reset the user input field
-
+  //Function
   addRecipe(submitObj);
 });
 
 function addRecipe(submitObj) {
+  //Destructuring Object
   const { title, time, ingredients } = submitObj;
   mainEl.insertAdjacentHTML(
     "afterend",
     `<article><h2>title: ${title}</h2><h3>Time:${time}</h3><p>Ingredients:${ingredients}</p><button>remove</button></article>`
   );
+  const newRecipe = document.querySelector("main article");
+  const removeBtn = document.querySelector("article button");
+  removeBtn.onclick = function () {
+    newRecipe.remove();
+  };
 }
