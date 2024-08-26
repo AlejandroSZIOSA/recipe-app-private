@@ -4,6 +4,7 @@ const formEl = document.querySelector("main aside form");
 formEl.addEventListener("submit", function (event) {
   event.preventDefault(); // Prevent the default form submission
 
+  //Recipe Info Obj
   const submitObj = {
     title: event.target.title.value,
     time: event.target.time.value,
@@ -11,7 +12,7 @@ formEl.addEventListener("submit", function (event) {
   };
   event.target.reset(); //Reset the user input field
 
-  //Function
+  //Regular Function
   addRecipe(submitObj);
 });
 
@@ -24,6 +25,8 @@ function addRecipe(submitObj) {
   );
   const newRecipe = document.querySelector("main article");
   const removeBtn = document.querySelector("article button");
+
+  //Event listener
   removeBtn.onclick = function () {
     newRecipe.remove();
   };
